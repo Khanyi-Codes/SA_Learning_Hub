@@ -1,0 +1,7 @@
+
+CREATE TABLE subject(
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT ,
+    grade_id BIGINT NOT NULL REFERENCES grade(id) ON DELETE RESTRICT
+);

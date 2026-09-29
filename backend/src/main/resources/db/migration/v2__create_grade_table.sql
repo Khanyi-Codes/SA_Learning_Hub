@@ -1,0 +1,7 @@
+
+CREATE TABLE grade(
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    display_order INT NOT NULL,
+    phase_id BIGINT NOT NULL REFERENCES phase(id) ON DELETE RESTRICT
+);
