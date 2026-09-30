@@ -1,0 +1,6 @@
+
+CREATE TABLE question(
+    id BIGSERIAL PRIMARY KEY,
+    question_text VARCHAR(255) NOT NULL,
+    quiz_id BIGINT NOT NULL REFERENCES quiz(id) ON DELETE RESTRICT
+);
