@@ -52,7 +52,7 @@ VALUES
     ('Consumer Studies', 'Covers consumer rights, food, nutrition, clothing and household resource management.'),
     ('Hospitality Studies', 'Introduces food preparation, hospitality services, hygiene and industry practices.'),
     ('Agricultural Technology', 'Focuses on agricultural tools, machinery, systems and practical technology.'),
-    (' isiXhosa', 'Develops listening, speaking, reading and writing skills in isiXhosa.');
+    ('isiXhosa', 'Develops listening, speaking, reading and writing skills in isiXhosa.');
 
 
 
