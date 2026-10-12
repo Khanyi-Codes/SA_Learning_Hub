@@ -22,9 +22,9 @@ VALUES ('Grade R', 1, (SELECT id FROM phase WHERE name = 'Foundation')),
 
 INSERT INTO subject (name, description,grade_id)
 VALUES
-    ('Mathematics', 'Develops numerical skills, algebra, geometry, measurement, data handling and problem-solving.'),
-    ('English', 'Develops listening, speaking, reading, writing, comprehension and language skills.'),
-    ('Afrikaans', 'Develops communication, reading, writing and comprehension skills in Afrikaans.'),
+    ('Mathematics', 'Develops numerical skills, algebra, geometry, measurement, data handling and problem-solving.',  (SELECT id FROM grade WHERE name = 'Grade 4')),
+    ('English', 'Develops listening, speaking, reading, writing, comprehension and language skills.', (SELECT id FROM grade WHERE name = 'Grade 4')),
+    ('Afrikaans', 'Develops communication, reading, writing and comprehension skills in Afrikaans.', (SELECT id FROM grade WHERE name = 'Grade 4')),
     ('isiZulu', 'Develops listening, speaking, reading and writing skills in isiZulu.'),
     ('Sepedi', 'Develops communication, comprehension and language skills in Sepedi.'),
     ('Life Orientation', 'Focuses on personal development, health, citizenship, physical education and career guidance.'),
