@@ -31,4 +31,13 @@ FROM (VALUES
          JOIN grade g ON g.name = v.grade_name;
 
 
+INSERT INTO lesson( id, title, content, display_order_order, subject_id)
+SELECT v.title, v.content, v.display_order, s.id
+FROM (VALUES ('Addition', 'Learn how to add numbers together', 1),
+             ('Subtraction', 'Learn how to subtract numbers from each other', 2),
+             ('Multiplication', 'Learn how to subtract numbers from each other and check ansewrs', 3))
+    AS v(title, content,display_order)
+      JOIN subject s ON s.name = 'Mathematics'
+        JOIN grade g on s.grade_id = g.id AND g.name = 'Grade 4';
+
 
