@@ -31,7 +31,7 @@ FROM (VALUES
          JOIN grade g ON g.name = v.grade_name;
 
 
-INSERT INTO lesson( id, title, content, display_order_order, subject_id)
+INSERT INTO lesson(  title, content, display_order, subject_id)
 SELECT v.title, v.content, v.display_order, s.id
 FROM (VALUES ('Addition', 'Learn how to add numbers together', 1),
              ('Subtraction', 'Learn how to subtract numbers from each other', 2),
