@@ -1,7 +1,7 @@
-import org.springframework.data.jpa.repository.JpaRepository;
 package za.co.salearninghub.api.content;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface PhaseRepository extends JpaRepository {
+public interface PhaseRepository extends JpaRepository <Phase , Long> {
 
 
 }
